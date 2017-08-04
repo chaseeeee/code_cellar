@@ -1,9 +1,11 @@
 #div1 {
+
     width: 300px;
     border: 25px yellowgreen;
     padding: 25px;
     margin: 25px;
     background-color: darkviolet;
+    margin-left: 2cm;
 }
 #div2 {
     width: 300px;
@@ -11,14 +13,15 @@
     padding: 25px;
     margin: 25px;
     background-color: red;
+    margin-left: 4cm;
 }
 #div3 {
-
-    width: 300px;
+        width: 300px;
     border: 25px yellowgreen;
     padding: 25px;
     margin: 25px;
     background-color: orange;
+    margin-left: 6cm;
 }
 #div4 {
     width: 300px;
@@ -26,6 +29,7 @@
     padding: 25px;
     margin: 25px;
     background-color: antiquewhite;
+    margin-left: 8cm;
 }
 #div5 {
     width: 300px;
@@ -33,6 +37,7 @@
     padding: 25px;
     margin: 25px;
     background-color: black;
+    margin-left: 10cm;
 }
 #div6 {
     width: 300px;
