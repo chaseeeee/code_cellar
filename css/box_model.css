@@ -1,12 +1,44 @@
-box1 {
-    width: 200px;
-    height: 200px;
-    padding: 10px;
-    border: 1px solid black;
-    margin: 10px;
-
+#div1 {
+    width: 300px;
+    border: 25px yellowgreen;
+    padding: 25px;
+    margin: 25px;
+    background-color: darkviolet;
 }
-body {
-    background: whitesmoke;
+#div2 {
+    width: 300px;
+    border: 25px yellowgreen;
+    padding: 25px;
+    margin: 25px;
+    background-color: red;
+}
+#div3 {
+
+    width: 300px;
+    border: 25px yellowgreen;
+    padding: 25px;
+    margin: 25px;
+    background-color: orange;
+}
+#div4 {
+    width: 300px;
+    border: 25px yellowgreen;
+    padding: 25px;
+    margin: 25px;
+    background-color: antiquewhite;
+}
+#div5 {
+    width: 300px;
+    border: 25px yellowgreen;
+    padding: 25px;
+    margin: 25px;
+    background-color: black;
+}
+#div6 {
+    width: 300px;
+    border: 25px yellowgreen;
+    padding: 25px;
+    margin: 25px;
+    background-color: sandybrown;
 }
 
