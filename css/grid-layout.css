@@ -1,0 +1,49 @@
+.row {
+	border: 1px solid green;
+	width: 100%;
+}
+
+div {
+	border: 1px solid black;
+	float: left;
+}
+
+.row {
+
+}
+
+.container {
+	width: 100%;
+}
+
+.column-one-half {
+	width: 50%;
+	padding: 15px;
+	height: 50px;
+	box-sizing: border-box;
+
+}
+
+.column-one-third {
+	width: 33.3%;
+	padding: 15px;
+	height: 50px;
+	box-sizing: border-box;
+
+}
+
+.column-one-quarter {
+	width: 25%;
+	padding: 15px;
+	height: 50px;
+	box-sizing: border-box;
+
+}
+
+.column-one-eighth {
+	width: 12.5%;
+	padding: 15px;
+	height: 50px;
+	box-sizing: border-box;
+
+}
