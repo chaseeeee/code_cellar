@@ -1,0 +1,17 @@
+.grid-contaner {
+	max-width: 1600px;
+	width: 90%;
+	margin 0 auto;
+}
+
+.column-one-third {
+	float: left;
+	width: 33%;
+}
+.row {
+	width: 100%;
+	overflow: auto;
+}
+.row:after {
+
+}

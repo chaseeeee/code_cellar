@@ -1,0 +1,15 @@
+#container {
+
+    float: left;
+    background-color: lightblue;
+}
+
+#left_menu {
+
+    float: left;
+    background-color: lightgray;
+    height: 500px;
+    border: 5px solid;
+    padding: 10px;
+
+}
