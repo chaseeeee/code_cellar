@@ -1,0 +1,20 @@
+.h1-jumbo {
+	font-family: "verdana";
+	color: red;
+
+}
+
+.light {
+	box-sizing: border-box;
+	background-color: whitesmoke;
+	opacity: 0.5;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.jumbotron {
+	background-image: url("http://java.codeup.com/content/examples/bootstrap/pizza.png");
+	background: cover;
+	height: 200px;
+}
