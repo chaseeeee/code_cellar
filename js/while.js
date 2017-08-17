@@ -1,6 +1,8 @@
+"use strict";
+
 var i = 2;
 
-while (i < 65600) {
+while (i <= 65536) {
     console.log('while loop iteration #' + i);
     i = 2 * i;
 }
