@@ -50,17 +50,17 @@ var random = Math.floor((Math.random() * 100) + 1);
 
 function isOdd (number) {
     if (number % 2 == 1) {
-        console.log("This number is odd");
+        number = "This number is odd";
     }
     else {
-        console.log("This number is even");
+        "This number is even";
     }
 }
 
 function isOdd2 (number) {
     var numberCheck = (number % 2 == 1);
-    var isItOdd = (numberCheck == false ? "This number is oddddddd" : "This number is even");
-    return console.log(isItOdd);
+    var isItOdd = (numberCheck === true ? "This number is oddddddd" : "This number is even");
+    return isItOdd;
 }
 
 /**
@@ -84,3 +84,5 @@ function calculateTip (total, tipPercent) {
     var calculation = (total * tipPercent);
     return (calculation);
 }
+
+console.log(calculateTip());
