@@ -5,11 +5,11 @@
     var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'];
 
     // function for logging the planets array
-    function logPlanets() {
+    /*function logPlanets() {
         console.log("Here is the list of planets:");
         console.log(planets);
 
-    }
+    }*/
 
     logPlanets();
 
