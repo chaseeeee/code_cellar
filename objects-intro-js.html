@@ -2,9 +2,67 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
+	<title>Objects-Intro Exercise</title>
 </head>
 <body>
+<script type=text/javascript>
 
+    "use strict";
+
+    // todo:
+    // Create an array of objects that represent books.
+    // Each book should have a title and an author property.
+    // The author property should be an object with a firstName and lastName.
+    // Be creative and add at least 5 books to the array
+    // var books = [todo];
+
+    var books = [
+        {
+            title: 'The Iliad',
+            author: 'Homer'
+        },
+        {
+            title: 'The Odyssey',
+            author: 'Homer'
+        },
+        {
+            title: 'It',
+            author: 'Stephen King'
+        },
+        {
+            title: 'Misery',
+            author: 'Stephen King'
+        },
+        {
+            title: 'Pet Cemetary',
+            author: 'Stephen King'
+        }
+    ];
+
+    // log out the books array
+    console.log(books);
+
+    // todo:
+    // Loop through the array of books using .forEach and print out the specified information about each one.
+    // start loop here
+
+    books.forEach(bookCount);
+
+    function bookCount(book, bookNumber, array)
+    {
+
+        console.log("Book #" + parseInt(bookNumber + 1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author);
+        console.log("--------------------");
+        /*console.log("Number in the array is " + array)*/
+
+    }
+
+
+    // end loop here
+
+</script>
+<script src="js/objects.js"></script>
 </body>
 </html>
