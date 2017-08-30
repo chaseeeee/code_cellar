@@ -1,0 +1,72 @@
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<meta charset="utf-8">
+	<title>Simple markers</title>
+	<style>
+		/* Always set the map height explicitly to define the size of the div
+		 * element that contains the map. */
+		#map {
+			height: 100%;
+		}
+
+		/* Optional: Makes the sample page fill the window. */
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+<form>
+	Please Enter latitude: <br>
+	<input type="text" id="latitude" value="29.5169815"> <br>
+	Please Enter longitude: <br>
+	<input type="text" id="longitude" value="-98.4579551"><br><br>
+	<button type="button" id="enterinfo">SHOW ME THE MAP!</button>
+</form>
+<div id="map"></div>
+
+<script>
+
+    "use strict";
+
+    (function () {
+
+        var latitude = document.getElementById('latitude');
+        var longitude = document.getElementById('longitude');
+        var enterInfo = document.getElementById('enterinfo');
+
+        console.log(Number(latitude.value));
+        console.log(Number(longitude.value));
+
+
+        enterInfo.addEventListener("click", initMap, true);
+
+        function initMap() {
+
+            var myLatLng = {
+
+                lat: Number(latitude.value),
+                lng: Number(longitude.value)
+            };
+
+            var map = new google.maps.Map(document.getElementById('map'),
+                {
+                    zoom: 16,
+                    center: myLatLng
+                })
+        }
+
+    })();
+
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCU318q7C1L0n3SD5_0YTzzZhBcsXG9JA8&callback=initMap">
+
+</script>
+
+</body>
+</html>
