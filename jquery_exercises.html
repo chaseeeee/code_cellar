@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Exercise </title>
+<body>
+<h1 class = "h1class" id="h1id">HELLO THIS IS H1 SPEAKING</h1>
+<ul class = "ulclass" id = "idclass">
+	<li class = "liclass" id="liid">FIRST</li>
+	<li class = "liclass" id="liid">SECOND</li>
+	<li class = "liclass" id="liid">THIRD</li>
+	<li class = "liclass" id="liid">FOURTH</li>
+	<li class = "liclass" id="liid">FIFTH</li>
+	<li class = "liclass" id="liid">SIXTH</li>
+</ul>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at ea, eius enim eum harum impedit ipsum maxime molestias natus odio perferendis, porro quo ratione recusandae repudiandae sequi tenetur. Minima.
+</p>
+
+<div id="funnydiv">STUFF UP IN THIS DIV</div>
+
+<script src="js/jquery-2.2.4.min.js"></script>
+<script>
+	"use strict";
+
+	var keyLogger = [];
+	var otherKeys = [];
+	var konamiCode = "38,38,40,40";
+
+  $(document).keyup(function(event){
+      keyLogger.push(event.keyCode);
+      otherKeys.concat(keyLogger);
+
+			if (keyLogger == konamiCode) {
+			     alert("you have 30 lives");
+			     keyLogger = [];
+			}
+   		else if (keyLogger.length === 5) {
+			     keyLogger = [];
+			     alert("try again");
+		  }
+		  else console.log("You have no lives");
+
+      console.log("This was the key code" + event.keyCode);
+		  console.log(keyLogger + "These are the arrays");
+		  console.log(konamiCode);
+		  console.log (keyLogger.length)
+
+  });
+
+
+
+</script>
+</body>
+</html>
