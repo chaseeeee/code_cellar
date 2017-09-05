@@ -6,7 +6,6 @@
      * Create person object, store it in a variable named person
      */
 
-    var person = {};
 
     /**
      * TODO:
@@ -18,9 +17,13 @@
     var person = {
         firstName: "Chase",
         lastName: "Hammock",
+
         sayHello: function() {
             console.log("Hello from " + this.firstName + " " + this.lastName + " my friends!");
+
         }
+
+
 
     };
 
