@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+</head>
+<body>
+
+<h1 class="h1">True Value Hardware Store</h1>
+
+<table id="products" class="table table-inverse talbe-striped">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+        </tr>
+
+    </thead>
+    <tbody id="insertProducts"></tbody>
+    <tr><td><button id="reLoad" class="btn btn-lg btn-default-outline">RELOAD THIS TABLE</button></td></tr>
+</table>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+<script>
+(function() {
+    "use strict";
+    // TODO: Create an ajax GET request for /data/inventory.json
+
+    function getData() {
+
+        $.get("data/inventory.json", {})
+            .done(function (data, status, jqXhr) {
+
+                data.forEach(function (data) {
+                    console.log(data.title);
+                    console.log(status);
+                    console.log(jqXhr);
+
+                    /*BUILD THE ARRAY*/
+
+                    $('#insertProducts').append("<tr><td> " + data.title + "</td><td> " + data.quantity + "</td><td>" + data.price + "</td><td> " + data.categories + "</td></tr>");
+
+                });
+            });
+
+    }
+    getData();
+
+    $('#reLoad').click (function(){
+        $('#insertProducts').empty();
+        getData();
+        console.log("Data Reloaded for Tool Inventory...");
+    });
+
+
+})();
+</script>
+
+</body>
+</html>
