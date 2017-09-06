@@ -6,7 +6,8 @@
 </head>
 <body bgcolor="#ffebcd">
 
-<h3 id="national-parks-heading">National Parks</h3>
+<h1>Parks List</h1>
+<h3 id="national-parks-toggle">National Parks</h3>
 <ul id="national-parks">
 	<li>Arches</li>
 	<li>Badlands</li>
@@ -14,7 +15,7 @@
 	<li>Denali</li>
 	<li>Everglades</li>
 </ul>
-<h3>State Parks of Texas</h3>
+<h3 id="state-parks-texas-toggle">State Parks of Texas</h3>
 <ul id="state-parks-texas">
 	<li>Abilene</li>
 	<li>Big Bend</li>
@@ -22,26 +23,20 @@
 	<li>Davis Mountains</li>
 	<li>Enchanted Rock</li>
 </ul>
+
 <script src="js/jquery-2.2.4.min.js"></script>
 <script>
 	"use strict";
 
 	(function(){
 
-      $('ul').each(function(index) {
-
-              $(this).children().last().css('background-color', 'yellow');
-
+      $('#national-parks-toggle').click(function() {
+          $('#national-parks').slideToggle();
       });
 
-      $('li').click(function() {
-              $(this).css('background-color', 'orange');
-          }
-      );
-
-			$('h3 ').click(function(){
-			    $(this).html('HELLO WHAT\'S UP!!!');
-			});
+      $('#state-parks-texas-toggle').click(function() {
+          $('#state-parks-texas').fadeToggle(2500);
+      });
 
 	})();
 
